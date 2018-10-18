@@ -1,0 +1,17 @@
+﻿body {
+    background-color: #0F1F0F;
+    color: #00C200 !important;
+}
+
+.mainbody {
+    background-color: #005300;
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: #3BFF3B !important;
+}
+
+.input-validation-error {
+    background-color: #FF0000 !important;
+}
