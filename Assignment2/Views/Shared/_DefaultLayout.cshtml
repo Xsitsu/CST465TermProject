@@ -13,29 +13,10 @@
 <body>
     <div class="container-fluid">
         <header>
-            <span class="siteTitle">CST465</span> <span class="tagline">Web Development with ASP.NET</span>
-            @if(User.Identity.IsAuthenticated)
-            {
-                <div>Welcome, @User.Identity.Name</div>
-                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { @id = "logoutForm" }))
-                {
-                    @Html.AntiForgeryToken()
-                    <a href="Logout" onclick="document.getElementById('logoutForm').submit(); return false;">Logout</a>
-                }
-            }
-            else
-            {
-                @Html.ActionLink("Login", "Login", "Account")
-            }
-
 
         </header>
         <nav>
-            <ul id="globalNav">
-                
-                <li>@Html.ActionLink("Examples", "Index", "Default")</li>
-                
-            </ul>
+
         </nav>
         
         <main>

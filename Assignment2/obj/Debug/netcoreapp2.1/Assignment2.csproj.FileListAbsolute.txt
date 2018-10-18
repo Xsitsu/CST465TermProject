@@ -40,3 +40,4 @@ C:\Users\Xsitsu\Documents\Programming Projects\CST465\CST465TermProject\Assignme
 C:\Users\Xsitsu\Documents\Programming Projects\CST465\CST465TermProject\Assignment2\obj\Debug\netcoreapp2.1\Razor\_ViewImports.g.cshtml.cs
 C:\Users\Xsitsu\Documents\Programming Projects\CST465\CST465TermProject\Assignment2\obj\Debug\netcoreapp2.1\Razor\Views\About\Index.g.cshtml.cs
 C:\Users\Xsitsu\Documents\Programming Projects\CST465\CST465TermProject\Assignment2\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Index.g.cshtml.cs
+C:\Users\Xsitsu\Documents\Programming Projects\CST465\CST465TermProject\Assignment2\obj\Debug\netcoreapp2.1\Razor\Views\Contact\Submit.g.cshtml.cs
