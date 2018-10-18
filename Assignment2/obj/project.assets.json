@@ -11506,6 +11506,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Jacob Locke\\Documents\\ProgrammingProjects\\CST465TermProject\\Assignment2\\Assignment2.csproj",
       "projectName": "Assignment2",
@@ -11541,20 +11544,20 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[2.1.1, )",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.1.2, )"
+            "version": "2.1.2"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "[2.1.0, )",
+            "version": "2.1",
+            "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "2.1.1",
             "autoReferenced": true
           }
         },

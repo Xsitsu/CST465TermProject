@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/DefaultStyles.css" />
+    @RenderSection("styles", false)
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <span class="siteTitle">CST465</span> <span class="tagline">Web Development with ASP.NET</span>
+            @if(User.Identity.IsAuthenticated)
+            {
+                <div>Welcome, @User.Identity.Name</div>
+                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { @id = "logoutForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <a href="Logout" onclick="document.getElementById('logoutForm').submit(); return false;">Logout</a>
+                }
+            }
+            else
+            {
+                @Html.ActionLink("Login", "Login", "Account")
+            }
+
+
+        </header>
+        <nav>
+            <ul id="globalNav">
+                
+                <li>@Html.ActionLink("Examples", "Index", "Default")</li>
+                
+            </ul>
+        </nav>
+        
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+    @RenderSection("footer", required: false)
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
